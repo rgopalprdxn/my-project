@@ -246,21 +246,29 @@ header {
 }
 
 h1 a{
+  border-bottom: 5px solid green;
   font: 2em "Open Sans", sans-serif;
   color: #f00;
   transition: font 2s;
 }
 
 h1 a:hover {
+  border-bottom: 5px solid red;
+  color: green;
   font: 3em "Open Sans", sans-serif;
 }
 
-.heading {
-  border-bottom: 5px solid #fff;
-}
-
-ul { margin: 2%; }
+ol { margin: 2%; }
 
 li { padding: 10px; }
 
-li a{ color: green }
+li a{
+ color: green;
+ font: 1.2em Helvetica; 
+}
+
+li a:hover{
+ color: red;
+ border-bottom: 1px solid green;
+ font: 1.2em Helvetica; 
+}
