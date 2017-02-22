@@ -159,125 +159,133 @@
  	background-color: #cfcfcf;
  }
 
- .div-container ul {
- 	display: -webkit-flex;
- 	display: -moz-flex;
- 	display: -o-flex;
- 	display: -ms-flex;
- 	display: flex;
+ h1 {
+  font-style: bold;
+  font-size:  30px;
+  text-align: center;
+}
 
- 	-webkit-flex-wrap: wrap;
- 	-moz-flex-wrap: wrap;
- 	-o-flex-wrap: wrap;
- 	-ms-flex-wrap: wrap;
- 	flex-wrap: wrap;
- }
+.div-container { margin-top: 50px; }
 
- .trans-div {
- 	height: 200px;
- 	margin: 5px;
- 	box-sizing: border-box;
+.div-container ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: flex;
 
- 	-webkit-flex-basis: 20%;
- 	-moz-flex-basis: 20%;
- 	-o-flex-basis: 20%;
- 	-ms-flex-basis: 20%;
- 	flex-basis: 20%;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
- 	-webkit-flex-grow: 1;
- 	-moz-flex-grow: 1;
- 	-o-flex-grow: 1;
- 	-ms-flex-grow: 1;
- 	flex-grow: 1;
+.trans-div {
+  height: 200px;
+  margin: 5px;
+  box-sizing: border-box;
 
- 	-webkit-transition: 0.5s linear;
- 	-moz-transition: 0.5s linear;
- 	-o-transition: 0.5s linear;
- 	-ms-transition: 0.5s linear;
- 	transition: 0.5s linear;
+  -webkit-flex-basis: 20%;
+  -moz-flex-basis: 20%;
+  -o-flex-basis: 20%;
+  -ms-flex-basis: 20%;
+  flex-basis: 20%;
 
- 	text-align: center;
- 	background-color: #555;
- }
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -o-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
 
- .odd { background-color: #42f44e; }
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  transition: 0.5s linear;
 
- .even { background-color: #49c666; }
+  text-align: center;
+  background-color: #555;
+}
 
- .background { background: url(https://www.w3schools.com/css/paper.gif); }
+.odd { background-color: #42f44e; }
 
- h2 {
- 	padding: 10px;
- 	font: 20px bold;
- }
+.even { background-color: #49c666; }
 
- .transition-1:hover {
- 	border-radius: 25px;
- }
+.background { background: url(https://www.w3schools.com/css/paper.gif); }
 
- .transition-2:hover {
- 	border: 10px solid transparent;
- 	border-image: url(https://www.w3schools.com/css/border.png) 30 repeat;
- }
+h2 {
+  padding: 10px;
+  font: 20px bold;
+}
 
- .transition-3:hover {
- 	background-color: red;
- }
+.transition-1:hover {
+  border-radius: 25px;
+}
 
- .transition-4:hover {
- 	background: url(https://rgopalprdxn.github.io/my-project/work/flex_box/assets/images/layer5.png) cover no-repeat;
- }
+.transition-2:hover {
+  border: 10px solid transparent;
+  border-image: url(https://www.w3schools.com/css/border.png) 30 repeat;
+}
 
- .transition-5:hover {
- 	color: blue;
- }
+.transition-3:hover {
+  background-color: red;
+}
 
- .transition-5:hover {
- 	color: blue;
- }
+.transition-4:hover {
+  background: url(https://rgopalprdxn.github.io/my-project/work/flex_box/assets/images/layer5.png) cover no-repeat;
+}
 
- /* .transition-6 { background-color: red; }*/
+.transition-5:hover {
+  color: blue;
+}
 
- .transition-6:hover {
- 	background: -webkit-linear-gradient(red, yellow); 
- 	background: -o-linear-gradient(red, yellow);
- 	background: -moz-linear-gradient(red, yellow);
- 	background: linear-gradient(red, yellow);
- }
+.transition-5:hover {
+  color: blue;
+}
 
- .transition-7:hover {
- 	text-shadow: 2px 2px red;
- }
+/* .transition-6 { background-color: red; }*/
 
- .transition-8:hover {
- 	text-shadow: 0 0 5px red;
- }
+.transition-6:hover {
+  background: -webkit-linear-gradient(red, yellow); 
+  background: -o-linear-gradient(red, yellow);
+  background: -moz-linear-gradient(red, yellow);
+  background: linear-gradient(red, yellow);
+}
 
- .transition-9:hover {
- 	-webkit-box-shadow: 5px 5px 5px grey;
- 	-moz-box-shadow: 5px 5px 5px grey;
- 	-o-box-shadow: 5px 5px 5px grey;
- 	-ms-box-shadow: 5px 5px 5px grey;
- 	-webkit-box-shadow: 5px 5px 5px grey;
- }
+.transition-7:hover {
+  text-shadow: 2px 2px red;
+}
 
- .transition-10 {
- 	width: 210px;
- 	//white-space: nowrap;
- 	//overflow: hidden;
- 	//text-overflow: ellipsis;
+.transition-8:hover {
+  text-shadow: 0 0 5px red;
+}
 
- 	-webkit-transition: 0.5s linear;
- 	-moz-transition: 0.5s linear;
- 	-o-transition: 0.5s linear;
- 	-ms-transition: 0.5s linear;
- 	transition: width 3s linear;
- }
+.transition-9:hover {
+  -webkit-box-shadow: 5px 5px 5px grey;
+  -moz-box-shadow: 5px 5px 5px grey;
+  -o-box-shadow: 5px 5px 5px grey;
+  -ms-box-shadow: 5px 5px 5px grey;
+  -webkit-box-shadow: 5px 5px 5px grey;
+}
 
- .transition-10:hover {
- 	width: 100%;
- }
+.transition-10 {
+  width: 210px;
+  //white-space: nowrap;
+  //overflow: hidden;
+  //text-overflow: ellipsis;
 
- .transition-11:hover {
- 	font: italic bold 25px Arial, Helvetica, sans-serif;
- }
+  -webkit-transition: 0.5s linear;
+  -moz-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  transition: width 3s linear;
+}
+
+.transition-10:hover {
+  width: 100%;
+}
+
+.transition-11:hover {
+  font: italic bold 25px Arial, Helvetica, sans-serif;
+}
