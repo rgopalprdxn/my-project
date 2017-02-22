@@ -288,3 +288,50 @@ h2 {
 .transition-11:hover {
   font: italic bold 25px Arial, Helvetica, sans-serif;
 }
+
+.box-container {
+  height: 100px;
+  margin: 10px;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute; 
+}
+
+.one {
+  background-color: green;
+  left: 0;
+  animation: one 2s ease-in-out infinite alternate;
+}
+
+.two {
+  background-color: yellow;
+  right: 0;
+  animation: two 2s ease-in-out infinite alternate;
+}
+
+@keyframes one {
+
+  to{
+    transform: rotate(-360deg);
+    left:50%;
+  }
+}
+
+@keyframes two {
+
+  to{
+    transform: rotate(360deg);
+    right:50%;
+  }
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
