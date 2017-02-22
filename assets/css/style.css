@@ -56,147 +56,147 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-  border: 0; }
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0; }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block; }
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block; }
 
-/* Force scrollbar */
-html {
-  overflow-y: scroll; }
+      /* Force scrollbar */
+      html {
+        overflow-y: scroll; }
 
-/* Align radios and text inputs with their label */
-input[type="radio"] {
-  vertical-align: text-bottom; }
+        /* Align radios and text inputs with their label */
+        input[type="radio"] {
+          vertical-align: text-bottom; }
 
-/* Hand cursor on clickable input elements */
-label,
-input[type="button"],
-input[type="submit"],
-button {
-  cursor: pointer; }
+          /* Hand cursor on clickable input elements */
+          label,
+          input[type="button"],
+          input[type="submit"],
+          button {
+            cursor: pointer; }
 
-strong {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: bold; }
+            strong {
+              font-family: inherit;
+              font-size: inherit;
+              font-weight: bold; }
 
-em {
-  font-style: italic; }
+              em {
+                font-style: italic; }
 
-img {
-  vertical-align: middle;
-  border: 0; }
+                img {
+                  vertical-align: middle;
+                  border: 0; }
 
-sub,
-sup {
-  position: relative;
-  font-size: 55%;
-  line-height: 0;
-  vertical-align: baseline; }
+                  sub,
+                  sup {
+                    position: relative;
+                    font-size: 55%;
+                    line-height: 0;
+                    vertical-align: baseline; }
 
-sup {
-  top: -.7em; }
+                    sup {
+                      top: -.7em; }
 
-sub {
-  bottom: -.25em; }
+                      sub {
+                        bottom: -.25em; }
 
 /* 1.2. Clear Fix
 ========================================================================== */
@@ -205,11 +205,11 @@ sub {
   display: table;
   content: " "; }
 
-.cf:after {
-  clear: both; }
+  .cf:after {
+    clear: both; }
 
-.cf {
-  *zoom: 1; }
+    .cf {
+      *zoom: 1; }
 
 /* 1.3. Font class declaration
 ========================================================================== */
@@ -224,51 +224,50 @@ sub {
  * as this is just and example to let you know. If there is only one font family
  * followed throughout the site, then menstion the font property in body. No need
  * of creating an extra class for it) */
-.futura-bold-font {
+ .futura-bold-font {
   font-family: "Futura Bold", "Gill Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold; }
 
-/*# sourceMappingURL=style.css.map */
+  /*# sourceMappingURL=style.css.map */
 
-a { text-decoration: none; }
+  a { text-decoration: none; }
 
-ul { list-style-type: none; }
+  ul { list-style-type: none; }
 
-body {
-  width: 100%;
-  margin: 2%;
-  background-color: yellow;
-}
+  body {
+    width: 100%;
+    background-color: yellow;
+  }
 
-header {
-  padding: 2%;
-}
+  header {
+    padding: 2%;
+  }
 
-h1 a{
-  border-bottom: 5px solid green;
-  font: 2em "Open Sans", sans-serif;
-  color: #f00;
-  transition: font 2s;
-}
+  h1 a{
+    border-bottom: 5px solid green;
+    font: 2em "Open Sans", sans-serif;
+    color: #f00;
+    transition: font 2s;
+  }
 
-h1 a:hover {
-  border-bottom: 5px solid red;
-  color: green;
-  font: 3em "Open Sans", sans-serif;
-}
+  h1 a:hover {
+    border-bottom: 5px solid red;
+    color: green;
+    font: 3em "Open Sans", sans-serif;
+  }
 
-ol { margin: 2%; }
+  ol { margin: 2%; }
 
-li { padding: 10px; }
+  li { padding: 10px; }
 
-li a{
- color: green;
- font: 1.2em Helvetica; 
-}
+  li a{
+   color: green;
+   font: 1.2em Helvetica; 
+ }
 
-li a:hover{
- color: red;
- border-bottom: 1px solid green;
- font: 1.2em Helvetica; 
-}
+ li a:hover{
+   color: red;
+   border-bottom: 1px solid green;
+   font: 1.2em Helvetica; 
+ }
