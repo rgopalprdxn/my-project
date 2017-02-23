@@ -37,3 +37,9 @@ p {
 	color: #555555;
 	text-transform: uppercase;
 }
+
+.star {
+	padding: 0 7px 0 7px;
+	color: #555555;
+	font-size: 25px;
+}
