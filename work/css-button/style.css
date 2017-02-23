@@ -1,0 +1,39 @@
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.first-box:hover {
+	opacity: 0.7;
+}
+
+
+.first-box {
+	width: 200px;
+	padding: 2px;
+	border: 2px solid #676767;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.second-box {
+	padding: 5px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background-color: #B5B5B5;
+}
+
+.third-box {
+	border: 1px solid #707070;
+	border-radius: 7px;
+	background: linear-gradient(#E3E3E3, #989898);
+
+}
+
+p {
+	display: inline-block;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #555555;
+	text-transform: uppercase;
+}
