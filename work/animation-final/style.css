@@ -1,0 +1,105 @@
+body {
+	background: #000;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.container {
+	box-sizing: border-box;
+	width: 300px;
+	height: 250px;
+	padding-top: 1px;
+	margin: 0 auto;
+	position: relative;
+	background: url(https://cdn.bannersnack.com/banners/bxhnfvx7a/embed/images/2ffb2483da80fc3df9a4b92cf0375631.jpg) no-repeat;
+	/*	background-image: url("https://cdn.bannersnack.com/banners/bxhnfvx7a/embed/images/2ffb2483da80fc3df9a4b92cf0375631.jpg");*/
+	background-position: 50% 50%;
+	background-size: cover;
+	opacity: 1;
+}
+
+.break { display: block; }
+
+h2 {
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 1.2;
+	letter-spacing: 6px;
+	opacity: 0;
+	animation: heading 2s ease-out forwards;
+}
+
+.line {
+	width: 140px;
+	position: absolute;
+	border: 2px solid #fff;
+}
+
+.top {
+	top: 45%;
+	left: -48%;
+	animation: top-line 2s ease-out forwards 2s;
+}
+.bottom {
+	bottom: 30%;
+	right: -48%;
+	animation: bottom-line 2s ease-out forwards 2s;
+}
+
+
+p{
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.4;
+	opacity: 0;
+	animation: para 2s ease-out forwards 4s;
+}
+
+button {
+	width: 165px;
+	padding: 10px 0 10px;
+	position: absolute;
+	left: 22%;
+	bottom: -14%;
+	color: #fff;
+	text-align: center;
+	background-color: rgb(243,149,82);
+	border: none;
+	border-radius: 20px;
+	animation: button 2s ease-out forwards 5s;
+}
+
+@keyframes top-line {
+	to{
+		left: 28%;
+	}
+}
+
+@keyframes bottom-line {
+	to{
+		right: 25%;
+	}
+}
+
+@keyframes para {
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes button {
+	to{
+		bottom: 7%;
+	}
+}
+
+@keyframes heading {
+	to{
+		opacity: 1;
+	}
+}
