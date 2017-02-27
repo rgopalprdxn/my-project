@@ -12,8 +12,8 @@ body {
 	padding-top: 1px;
 	margin: 0 auto;
 	position: relative;
-	background: url(https://cdn.bannersnack.com/banners/bxhnfvx7a/embed/images/2ffb2483da80fc3df9a4b92cf0375631.jpg) no-repeat;
-	/*	background-image: url("https://cdn.bannersnack.com/banners/bxhnfvx7a/embed/images/2ffb2483da80fc3df9a4b92cf0375631.jpg");*/
+	overflow: hidden;
+	background: url(background.jpg) no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 	opacity: 1;
