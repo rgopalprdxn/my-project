@@ -257,6 +257,13 @@
     font: 3em "Open Sans", sans-serif;
   }
 
+  ol {
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   ol { margin: 2%; }
 
   li { padding: 10px; }
