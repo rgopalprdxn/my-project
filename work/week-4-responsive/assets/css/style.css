@@ -192,7 +192,7 @@ header {
 header h2 {
   font-family: 'Lato', sans-serif;
   color:  #fff;
-  line-height: 0.5;
+  line-height: 1;
   font-size: 3rem;/* Approximation due to font substitution */
 }
 
@@ -265,7 +265,6 @@ nav li img:hover { opacity: 0.7; }
   width: 64.75%;
   float: right;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   font-family: 'Lato', sans-serif;
   font-size: 1.125rem;/* Approximation due to font substitution */
@@ -274,9 +273,16 @@ nav li img:hover { opacity: 0.7; }
   text-transform: uppercase;
 }
 
+.burger {
+  display: none;
+}
+
+.menu li { flex-grow: 1; }
+
 .menu-logo { width: 15.63%; }
 
 .menu li a {
+  display: block;
   font-size: 1.125rem;
 }
 
@@ -548,4 +554,57 @@ nav li img:hover { opacity: 0.7; }
 .footer-logo {
   width: 26.66%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 8px;
+  }
+  .menu ul {
+    /*display: none;*/
+    width: 64.75%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125rem;/* Approximation due to font substitution */
+    font-weight: 300;
+    line-height: 1.667;/* Approximation due to font substitution */
+    text-transform: uppercase;
+  }
+  .menu ul li{
+    /*display: none;*/
+    width: 100%;
+  }
+  .burger {
+    display: block;
+    float: right;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .features ul {
+    flex-wrap: wrap;
+  }
+  .team ul {
+    flex-wrap: wrap;
+  }
+  .details{
+    width: 50%;
+  }
+  .team ul li{
+    width: 50%;
+  }
+  .skills li { width: 100%; }
+  .about-content {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .about-descption {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .about-descption p {
+    margin-bottom: 5px;
+  }
+  .mock { width: 100%; }
 }
