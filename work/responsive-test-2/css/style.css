@@ -1,0 +1,428 @@
+/*------------------------------------------------------------------
+[Table of contents]
+* To keep an overview of structure of your code, we make use of table of 
+* content. Table of content is use display the overall tree structure of your
+* Layout. 
+* (NOTE: Remove this commented code once you start developing the code.
+* Remove the following table of content and add your own as this is just and 
+* example to let you know)
+
+1. CSS Reset Code
+1.1. Eric Meyers Reset/HTML5 display-role reset for older browsers
+1.2. Clear Fix
+1.3. Font class declaration
+2. Body
+3. Header / .header
+2.1. Navigation / .navbar
+4. Content / .content
+4.1. Left column / .leftcolumn
+4.2. Right column / .rightcolumn
+4.3. Sidebar / .sidebar
+4.3.1. RSS / .rss
+4.3.2. Search / .search
+4.3.3. Boxes / .box
+4.3.4. Sideblog / .sideblog
+4.3.5. Advertisements / .ads
+5. Footer / .footer
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Color codes]
+* Mention the color code you have used in your html document for the respective
+* elements given as follow. 
+* (NOTE: Remove this commented code once you start developing the code. 
+* Remove the following color code and add your own as this is just and 
+* example to let you know)
+
+Header nav: #e5e5df (Cararra)
+Header nav a (hover): #fff (white)
+Header nav a (active): #fff (white)
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Typography]
+* Mention the Typography you have used in your html document for the respective
+* elements given as follow.
+* (NOTE: Remove this commented code once you start developing the code. 
+* Remove the following typography and add your own as this is just and 
+* example to let you know)
+
+Header nav a: 16px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+View-register li a : 12px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+-------------------------------------------------------------------*/
+/* ==========================================================================
+1. CSS Reset Code
+========================================================================== */
+/* 1.1. Eric Meyers Reset
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, .video-list ul li span,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+input[type='radio'] {
+  vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer; }
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit; }
+
+em {
+  font-style: italic; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0; }
+
+sup {
+  top: -.7em; }
+
+sub {
+  bottom: -.25em; }
+
+/* 1.2. Clear Fix
+========================================================================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " "; }
+
+.cf:after {
+  clear: both; }
+
+/*.cf { *zoom: 1; }*/
+/* 1.3. Font class declaration
+========================================================================== */
+/*
+* Mention the font property (eg: font-family, font-size, font-weight, font-style
+* etc) that have been commonly used in the html document. Make a class of it and
+* apply to the element wherever it is needed. If any single property in changed,
+* then override only that property in the particular class which is used for the
+* element.
+* (NOTE: Remove this commented code once you start 
+* developing the code. Remove the following font class and add your own
+* as this is just and example to let you know. If there is only one font family
+* followed throughout the site, then menstion the font property in body. No need
+* of creating an extra class for it) */
+.futura-bold-font {
+  font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  font: normal 1rem sans-serif; }
+
+.wrapper {
+  width: 90%;
+  padding: 2% 0;
+  margin: 0 auto;
+  text-align: center; }
+
+header {
+  padding: 1% 0 1% 4%;
+  background-color: #5e0315;
+  font-size: 3rem; }
+  header a {
+    color: #fff; }
+    header a:hover {
+      opacity: .7; }
+
+h1 {
+  padding-top: 6%; }
+  h1 a {
+    display: inline-block; }
+    h1 a:hover {
+      opacity: .7; }
+
+.goal {
+  background: url(../assets/images/Grass_Image_02.jpg) no-repeat;
+  background-size: cover; }
+  .goal h2 {
+    padding-top: 4%;
+    color: #fff;
+    font: normal 3rem sans-serif;
+    text-transform: capitalize; }
+  .goal p, .goal .video-list ul li span, .video-list ul li .goal span {
+    width: 87%;
+    padding-top: 1%;
+    margin: 0 auto;
+    color: #b2adad;
+    font: normal 2rem sans-serif; }
+
+sup {
+  text-transform: uppercase; }
+
+.goal-menu {
+  width: 100%;
+  margin: 5% auto 0; }
+  .goal-menu li {
+    margin-right: 5%;
+    display: inline-block; }
+    .goal-menu li a {
+      color: #c9c3c3;
+      font: normal 1.5rem sans-serif; }
+      .goal-menu li a:hover {
+        text-decoration: underline; }
+
+.scroll {
+  padding-top: 3%; }
+  .scroll a {
+    color: #fff;
+    font: normal 1.2rem sans-serif; }
+    .scroll a span {
+      padding-bottom: 1%;
+      display: block; }
+
+.big-video {
+  padding: 11%;
+  background: url(../assets/images/jp_Elaine-Agather.jpg) no-repeat;
+  background-size: 100% 100%; }
+  .big-video a {
+    width: 12%;
+    padding: 7%;
+    margin: 0 auto;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #898989;
+    color: #fff;
+    font: lighter 4rem sans-serif;
+    text-align: center;
+    opacity: .7; }
+
+.video-list {
+  padding-top: 3%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d8d2d2; }
+  .video-list ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between; }
+    .video-list ul li {
+      width: 24%; }
+      .video-list ul li p, .video-list ul li span {
+        padding-top: 10%;
+        color: #5e0315; }
+      .video-list ul li span {
+        display: block;
+        padding: 3% 0 5%; }
+    .video-list ul img {
+      width: 100%;
+      height: auto; }
+
+.prev-video {
+  align-self: center;
+  color: #a89e9e;
+  font: normal 1.5rem sans-serif;
+  cursor: pointer; }
+
+.how-it-works-content, .how-it-works-content p, .how-it-works-content .video-list ul li span, .video-list ul li .how-it-works-content span {
+  padding-top: 3%;
+  color: #5e0315; }
+  .how-it-works-content h2, .how-it-works-content .video-list ul li span h2, .video-list ul li .how-it-works-content span h2 {
+    font: bold 3rem sans-serif; }
+  .how-it-works-content p, .how-it-works-content .video-list ul li span p, .video-list ul li .how-it-works-content span p, .how-it-works-content .video-list ul li span, .video-list ul li .how-it-works-content span {
+    font: normal 1.7rem sans-serif; }
+
+.step-process {
+  margin-top: 12%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between; }
+
+.process {
+  width: 47%; }
+
+.steps > ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  text-align: left; }
+  .steps > ul li {
+    width: 18%; }
+
+.content h3 {
+  color: #c9c3c3;
+  font: normal 1.5rem sans-serif; }
+.content p, .content .video-list ul li span, .video-list ul li .content span {
+  padding-top: 3%;
+  color: #5e0315;
+  font: normal 1.5rem sans-serif; }
+.content a {
+  padding-top: 3%;
+  display: inline-block;
+  color: #5e0315;
+  font: normal 1.5rem sans-serif; }
+
+.top {
+  border-top: 6px solid #b5b3b3;
+  border-bottom: 1px solid #b5b3b3;
+  background-color: #d1cccc; }
+  .top > h2 {
+    width: 30%;
+    padding: 9%;
+    margin: 14% auto 0;
+    border: 2px solid #b5b3b3;
+    border-radius: 50%;
+    background-color: #f2eded;
+    text-align: center; }
+  .top h3 {
+    padding-bottom: 8%;
+    margin: 8%;
+    color: #5e0315;
+    font: bold 0.6rem sans-serif; }
+
+.bottom {
+  background-color: #d8d4d4; }
+  .bottom h2 {
+    padding-top: 8%;
+    margin-left: 8%;
+    color: #000;
+    font: bold 0.7rem sans-serif; }
+  .bottom ul {
+    margin: 0 0 0 8%;
+    font: normal 0.7rem sans-serif;
+    list-style-position: inside;
+    list-style-type: disc; }
+    .bottom ul li {
+      width: 100%; }
+
+.grid {
+  margin-top: 5%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .grid .img-content img {
+    width: 100%;
+    height: auto; }
+  .grid .flex {
+    width: 45%;
+    padding-top: 5%; }
+  .grid .feature {
+    padding-top: 9%; }
+
+.common-question {
+  margin-top: 9%; }
+  .common-question h2 {
+    padding-bottom: 4%;
+    color: #5e0315;
+    font: normal 2rem sans-serif; }
+  .common-question li {
+    color: #5e0315; }
+    .common-question li::first-letter {
+      font: bold 1.5rem sans-serif; }
+  .common-question h2 a {
+    padding-top: 5%;
+    display: inline-block;
+    color: #5e0315; }
+
+.questions {
+  text-align: left; }
+  .questions ul li {
+    cursor: pointer;
+    font: normal 1.4rem sans-serif; }
+
+footer {
+  padding: 2% 0;
+  color: #fff;
+  font: bold 2rem sans-serif;
+  background-color: #5e0315;
+  text-align: center; }
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 10px; }
+
+  a:hover {
+    text-decoration: none; }
+
+  .goal-menu li {
+    width: 100%; }
+
+  .video-list {
+    display: flex;
+    justify-content: center; }
+    .video-list .prev-video {
+      display: none; }
+    .video-list ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .video-list ul li {
+        width: 95%;
+        margin-right: 0; }
+
+  .step-process {
+    flex-direction: column;
+    justify-content: center; }
+    .step-process .process {
+      width: 100%; }
+
+  .grid .flex {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

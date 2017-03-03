@@ -1,0 +1,327 @@
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'partials/mixins';
+
+ul { list-style-type: none; }
+a { text-decoration: none; }
+
+.container {
+	width: 100%;
+	max-width: 2000px;
+	margin: 0 auto;
+	@include font;
+}
+
+.wrapper {
+	width: 90%;
+	padding: 2% 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header {
+	padding: 1% 0 1% 4%;
+	background-color: #5e0315;
+	font-size: 3rem;
+	a {
+		color: #fff;
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+h1 {
+	padding-top: 6%;
+	a {
+		display: inline-block;
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.goal {
+	background: url(../assets/images/Grass_Image_02.jpg) no-repeat;
+	background-size: cover;
+	h2 {
+		padding-top: 4%;
+		color: #fff;
+		@include font(normal,3rem);
+		text-transform: capitalize;
+	}
+
+	p {
+		width: 87%;
+		padding-top: 1%;
+		margin: 0 auto;
+		color: #b2adad;
+		@include font(normal, 2rem);
+	}
+}
+
+sup {
+	text-transform: uppercase;
+}
+
+.goal-menu {
+	width: 100%;
+	margin: 5% auto 0;
+	li {
+		margin-right: 5%;
+		display: inline-block;
+
+		a {
+			color: $font-grey;
+			@include font(normal, 1.5rem);
+			&:hover { text-decoration: underline; }
+		}
+	}
+}
+
+.scroll {
+	padding-top: 3%;
+	a {
+		color: $font-white;
+		@include font (normal, 1.2rem);
+		span {
+			padding-bottom: 1%;
+			display: block;
+		}
+	}
+}
+
+.big-video {
+	padding: 11%;
+	background: url(../assets/images/jp_Elaine-Agather.jpg) no-repeat;
+	background-size: 100% 100%;
+	a{
+		width: 12%;
+		padding: 7%;
+		margin: 0 auto;
+		display: inline-block;
+		@include border-radius(50%);
+		background-color: #898989;
+		color: $font-white;
+		@include font(lighter, 4rem);
+		text-align: center;
+		opacity: .7;
+	}	
+}
+
+.video-list {
+	padding-top: 3%;
+	@include flex();
+	justify-content: space-around;
+	background-color:  #d8d2d2;
+	ul {
+		@include flex();
+		justify-content: space-between;
+		li {
+			width: 24%;
+			p{
+				padding-top: 10%;
+				color: $font-red;
+			}
+			span {
+				@extend p;
+				display: block;
+				padding: 3% 0 5%;
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.prev-video {
+	align-self: center;
+	color: #a89e9e;
+	@include font(normal,1.5rem);
+	cursor: pointer;
+}
+
+.how-it-works-content {
+	padding-top: 3%;
+	color: $font-red;
+	h2 { @include font(bold, 3rem); }
+	p{
+		@extend .how-it-works-content;
+		@include font(normal, 1.7rem);
+	}
+}
+
+.step-process {
+	margin-top: 12%;
+	@include flex();
+	justify-content: space-between;	
+}
+
+.process { width: 47%; }
+
+.steps {
+	> ul {
+		@include flex();
+		justify-content: space-between;
+		text-align: left;
+		li {
+			width: 18%;
+		}
+	}
+}
+
+.content {
+	h3 {
+		color: $font-grey;
+		@include font (normal, 1.5rem);
+	}
+	p{
+		padding-top: 3%;
+		color: $font-red;
+		@include font(normal,1.5rem);
+	}
+	a {
+		padding-top: 3%;
+		display: inline-block;
+		color: $font-red;
+		@include font(normal, 1.5rem);
+	}
+}
+
+.top {
+	border-top: 6px solid #b5b3b3;
+	border-bottom: 1px solid #b5b3b3;
+	background-color: #d1cccc;
+	> h2 {
+		width: 30%;
+		padding: 9%;
+		margin: 14% auto 0;
+		border:2px solid #b5b3b3;
+		border-radius: 50%;
+		background-color: #f2eded;
+		text-align: center;
+	}
+
+	h3 {
+		padding-bottom: 8%;
+		margin: 8%;
+		color: #5e0315;
+		@include font(bold, .6rem);
+	}
+}
+
+.bottom {
+	background-color: #d8d4d4;
+	h2 {
+		padding-top: 8%;
+		margin-left: 8%;
+		color: #000;
+		@include font(bold, .7rem);
+	}
+	ul {
+		margin: 0 0 0 8%;
+		@include font(normal, .7rem);
+		list-style-position: inside;
+		list-style-type: disc;
+		li { width: 100%; }
+	}
+}
+
+.grid {
+	margin-top: 5%;
+	@include flex();
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.img-content{
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.flex {
+		width: 45%;
+		padding-top: 5%;
+	}
+	.feature { padding-top: 9%; }
+}
+
+.common-question {
+	margin-top: 9%;
+	h2 {
+		padding-bottom: 4%;
+		color: $font-red;
+		@include font(normal, 2rem);
+	}
+	li {
+		color: $font-red;
+		&::first-letter {
+			@include font(bold, 1.5rem);
+		}
+	}
+	h2 {
+		a {
+			padding-top:5%;
+			display: inline-block;
+			color: $font-red;
+		}
+	}
+}
+
+.questions {
+	text-align: left;
+	ul{
+		li {
+			cursor: pointer;
+			@include font(normal, 1.4rem);
+		}
+	}
+
+}
+
+footer {
+	padding: 2% 0;
+	color: #fff;
+	@include font(bold,2rem);
+	background-color: $font-red;
+	text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+	html { font-size: 10px; }
+	a:hover { text-decoration: none; }
+	.goal-menu {
+		li {
+			width: 100%;
+		}
+	}
+	.video-list{
+		display: flex;
+		justify-content: center;
+		.prev-video { display: none; }
+		ul {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			li {
+				width: 95%;
+				margin-right: 0;
+			}
+		}
+	}
+
+	.step-process {
+		flex-direction: column;
+		justify-content: center;
+		.process {
+			width: 100%;
+		}
+	}
+	.grid{
+		.flex {
+			width: 100%;
+		}
+	}
+}
+

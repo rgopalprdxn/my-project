@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SVG images</title>
+	<style type="text/css">
+		ul { list-style-type: none; }
+		a {
+			display: inline-block;
+			text-decoration: none;
+		}
+		
+		.image {
+			width: 50%;
+			height: 200px;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.sprite {
+			width: 31px;
+			height: 31px;
+		}
+		.facebook { background: url('social_media_icons_sprite.png') no-repeat 0 -43px; }
+		.linkedin { background: url('social_media_icons_sprite.png') no-repeat -86px -43px; }
+		.youtube {
+			width: 43px;
+			height: 31px;
+			background: url('social_media_icons_sprite.png') no-repeat -128px -43px;
+		}
+		.twitter { background: url('social_media_icons_sprite.png') no-repeat -43px -43px; }
+	</style>
+</head>
+<body>
+	<div class="image">
+		<img src="illustration.svg" alt="illustration">
+	</div>
+	<div class="sprite-nav">
+		<ul>
+			<li><a class="sprite facebook" href="#FIXME" title="Facebook"></a></li>
+			<li><a class="sprite twitter" href="#FIXME" title="twitter"></a></li>
+			<li><a class="sprite linkedin" href="#FIXME" title="linkedin"></a></li>
+			<li><a class="sprite youtube" href="#FIXME" title="youtube"></a></li>
+		</ul>
+		<!-- <img class="sprite facebook" src="https://www.w3schools.com/css/img_trans.gif" alt="facebook">
+		<img class="sprite twitter" src="https://www.w3schools.com/css/img_trans.gif" alt="twitter">
+		<img class="sprite linkedin" src="https://www.w3schools.com/css/img_trans.gif" alt="linkedin">
+		<img class="sprite youtube" src="https://www.w3schools.com/css/img_trans.gif" alt="youtube"> -->
+
+	</div>
+</body>
+</html>
