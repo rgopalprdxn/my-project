@@ -3,7 +3,10 @@
 @import 'partials/mixins';
 
 ul { list-style-type: none; }
-a { text-decoration: none; }
+a {
+	text-decoration: none;
+	&:hover { text-decoration: underline; }
+}
 
 .container {
 	width: 100%;
@@ -187,6 +190,7 @@ sup {
 		display: inline-block;
 		color: $font-red;
 		@include font(normal, 1.5rem);
+		&:hover { text-decoration: underline; }
 	}
 }
 
@@ -207,7 +211,7 @@ sup {
 	h3 {
 		padding-bottom: 8%;
 		margin: 8%;
-		color: #5e0315;
+		color: $font-red;
 		@include font(bold, .6rem);
 	}
 }
@@ -265,6 +269,7 @@ sup {
 			padding-top:5%;
 			display: inline-block;
 			color: $font-red;
+			&:hover { text-decoration: underline; }
 		}
 	}
 }

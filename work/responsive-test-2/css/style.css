@@ -149,6 +149,8 @@ ul {
 
 a {
   text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 .container {
   width: 100%;
@@ -313,6 +315,8 @@ sup {
   display: inline-block;
   color: #5e0315;
   font: normal 1.5rem sans-serif; }
+  .content a:hover {
+    text-decoration: underline; }
 
 .top {
   border-top: 6px solid #b5b3b3;
@@ -379,6 +383,8 @@ sup {
     padding-top: 5%;
     display: inline-block;
     color: #5e0315; }
+    .common-question h2 a:hover {
+      text-decoration: underline; }
 
 .questions {
   text-align: left; }
