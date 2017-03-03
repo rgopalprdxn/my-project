@@ -38,9 +38,7 @@ h1 {
 	padding-top: 6%;
 	a {
 		display: inline-block;
-		&:hover {
-			opacity: .7;
-		}
+		&:hover {	opacity: .7; }
 	}
 }
 
@@ -63,9 +61,7 @@ h1 {
 	}
 }
 
-sup {
-	text-transform: uppercase;
-}
+sup { text-transform: uppercase; }
 
 .goal-menu {
 	width: 100%;
@@ -173,6 +169,26 @@ sup {
 			width: 18%;
 		}
 	}
+}
+
+.future-wealth {
+	.bottom {
+		display: flex;
+		justify-content: space-around;
+		.bar {
+			width: 30%;
+			margin: 8% 0 8% 8%;
+			background-color: #578de5;
+		}
+
+		p {
+			@include font(normal, .5rem);
+		}
+	}
+}
+
+.zoom {
+	float: right;
 }
 
 .content {

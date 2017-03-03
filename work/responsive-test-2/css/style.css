@@ -303,6 +303,19 @@ sup {
   .steps > ul li {
     width: 18%; }
 
+.future-wealth .bottom {
+  display: flex;
+  justify-content: space-around; }
+  .future-wealth .bottom .bar {
+    width: 30%;
+    margin: 8% 0 8% 8%;
+    background-color: #578de5; }
+  .future-wealth .bottom p, .future-wealth .bottom .video-list ul li span, .video-list ul li .future-wealth .bottom span {
+    font: normal 0.5rem sans-serif; }
+
+.zoom {
+  float: right; }
+
 .content h3 {
   color: #c9c3c3;
   font: normal 1.5rem sans-serif; }
