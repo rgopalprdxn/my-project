@@ -222,7 +222,8 @@ sup {
 .big-video {
   padding: 11%;
   background: url(../assets/images/jp_Elaine-Agather.jpg) no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  text-align: center; }
   .big-video a {
     width: 12%;
     padding: 7%;
