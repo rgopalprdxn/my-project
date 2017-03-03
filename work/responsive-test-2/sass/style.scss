@@ -234,6 +234,7 @@ sup { text-transform: uppercase; }
 }
 
 .bottom {
+	position: relative;
 	background-color: #d8d4d4;
 	h2 {
 		padding-top: 8%;
@@ -247,6 +248,15 @@ sup { text-transform: uppercase; }
 		list-style-position: inside;
 		list-style-type: disc;
 		li { width: 100%; }
+	}
+
+	.traingle {
+		position: absolute;
+		top: 15%;
+		left: 100%;
+		border-width: 10px;
+		border-style: solid;
+		border-color: transparent transparent transparent #d8d4d4;
 	}
 }
 

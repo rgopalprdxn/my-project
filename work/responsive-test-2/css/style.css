@@ -351,6 +351,7 @@ sup {
     font: bold 0.6rem sans-serif; }
 
 .bottom {
+  position: relative;
   background-color: #d8d4d4; }
   .bottom h2 {
     padding-top: 8%;
@@ -364,6 +365,13 @@ sup {
     list-style-type: disc; }
     .bottom ul li {
       width: 100%; }
+  .bottom .traingle {
+    position: absolute;
+    top: 15%;
+    left: 100%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #d8d4d4; }
 
 .grid {
   margin-top: 5%;
